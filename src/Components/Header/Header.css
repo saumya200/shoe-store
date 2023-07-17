@@ -1,0 +1,264 @@
+.header {
+  display: flex;
+  overflow: hidden;
+  height: 100px;
+  border: 1px solid #d3d3d3;
+  width: 100%;
+}
+.header1,
+.header2 {
+  display: flex;
+}
+
+/* 360px */
+.header1 {
+  margin: 10px 0 0 10px;
+}
+.header--icon,
+.header--cart {
+  height: 20px;
+  width: 20px;
+}
+.header--icon {
+  margin: 23px 0 0 20px;
+  cursor: pointer;
+  border: none;
+}
+.header--title {
+  padding: 17px 0 0 10px;
+  font-size: 20px;
+  font-family: "ubuntu", sans-serif;
+  display:flex;
+}
+.header--cart {
+  cursor: pointer;
+  margin: 27px 0 0 70px;
+  display:flex;
+}
+
+.header--cart span{
+  padding:0 3px;
+  background-color: orange;
+  color:white;
+  font-weight: bold;
+  border-radius: 5px;
+  position:relative;
+  top:-15px;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+  margin: 20px 0 0 25px;
+  cursor: pointer;
+}
+.collections:hover,
+.men:hover,
+.women:hover,
+.about:hover,
+.contact:hover {
+  border-bottom: 3px solid #f28c28;
+  color: black;
+}
+.collections:active,
+.men:active,
+.women:active,
+.about:active,
+.contact:active {
+  border-bottom: 3px solid #f28c28;
+}
+.men,
+.women,
+.about,
+.contact {
+  margin-left: 20px;
+}
+#Sidebar {
+  height: 100%;
+  width: 0px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.5s;
+}
+#Sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+.SidebarList {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.SidebarList .row {
+  width: 100%;
+  height: 60px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #f28c28;
+  color: white;
+}
+.row #icon {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #title {
+  flex: 70%;
+}
+#close {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-top: 20px;
+  display: none;
+}
+.toggle {
+  width: 250px;
+  height: 70px;
+  border-right: 1px solid #eee;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  transition: 0.3s;
+  margin-top: 71px;
+  background-color: #fff;
+  border-right: 1px solid #eee;
+  line-height: 80px;
+  overflow: hidden;
+}
+.header--SidebarList{
+  margin-top:5px;
+}
+.header--SidebarList a{
+  display: flexbox;
+  
+  /* justify-content: center; */
+  font-weight: 20px;
+  font-size: 18px;
+  color:#9a9b9c ;
+  padding-left:30px;
+  text-decoration: none;
+  cursor:pointer;
+}
+.header--SidebarList a:hover{
+  /* border-bottom: 3px solid #f28c28; */
+  color: black;
+  transition: 0.1s;
+  
+}
+/* .header--SidebarList a:active{
+  border-bottom: 3px solid #f28c28;
+
+} */
+
+
+
+
+@media screen and (min-width: 360px) {
+  .header--icon {
+    margin-left: 20px;
+  }
+  .header--cart {
+    margin-left: 80px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .header--icon {
+    margin-left: 70px;
+  }
+  .header--cart {
+    margin-left: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header--cart {
+    margin-left: 370px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header--title {
+    font-size: 25px;
+    margin-left: 50px;
+    display:flex;
+  }
+  .header--icon {
+    display: none;
+  }
+  .header--cart {
+    margin-left: 200px;
+    
+  }
+  /* .avatar{
+    margin-left:5px;
+  } */
+  .header2{
+    margin-top:10px;
+  }
+
+ 
+}
+@media screen and (min-width: 1280px) {
+  .header--cart {
+    margin-left: 400px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .header--cart {
+    margin-left: 600px;
+  }
+}
+@media screen and (min-width: 1740px) {
+  .header--cart {
+    margin-left: 800px;
+    width: 30px;
+    height: 30px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .header--title {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width:1920px){
+  .header--cart{
+    margin-left:1000px;
+  }
+  
+}
+
+@media screen  and (max-width:768px){
+  .header--SidebarList{
+    display:none;
+  } 
+  
+}
